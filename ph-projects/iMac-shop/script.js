@@ -1,25 +1,23 @@
 
-// calculation 
+// calculation :->
 const bestPrice = document.getElementById('best-price');
 const memoryCost = document.getElementById('memory-cost');
 const sotrageCost = document.getElementById('sotrage-cost');
 const deliveryCost = document.getElementById('delivery-cost');
 
 
-// tatal calculation
+// tatal calculation :->
 const totalPrice = document.querySelectorAll('.total-price');
+
 function totalCost(){
-
     for(let i =0; i<totalPrice.length; i++){
-
         let total = Number(bestPrice.innerText) + Number(memoryCost.innerText) + Number(sotrageCost.innerText)+ Number(sotrageCost.innerText)+ Number(deliveryCost.innerText);
         totalPrice[i].innerText = total;
     };
-
 };
 
-//////////////
-// memory button 
+/////////////////////
+// memory button :->
 const memory8Gb = document.getElementById('memory-8');
 const memory16Gb = document.getElementById('memory-16');
 
@@ -30,12 +28,11 @@ function memory (gb){
         memoryCost.innerText = 180;
     }
 };
-//
+// Click event for memory button --
 memory8Gb.addEventListener('click',function(){
     memory(8);
     totalCost();
 });
-//
 memory16Gb.addEventListener('click',function(){
      memory(16) ;
      totalCost();
@@ -45,8 +42,8 @@ memory16Gb.addEventListener('click',function(){
 
 
 
-///////////////////
-// stroage button 
+/////////////////////
+// stroage button :->
 const storage256 = document.getElementById('storage-256');
 const storage512 = document.getElementById('storage-512');
 const storage1Tb = document.getElementById('storage-1tb');
@@ -60,17 +57,17 @@ function storage (ssd){
         sotrageCost.innerText =180;
     }
 };
-//
+// Click event for Storage button --
 storage256.addEventListener('click', function(){
     storage(256);
     totalCost();
 });
-//
+
 storage512.addEventListener('click', function(){
     storage(512);
     totalCost();
 });
-//
+
 storage1Tb.addEventListener('click', function(){
     storage('1Tb');
     totalCost();
@@ -78,7 +75,7 @@ storage1Tb.addEventListener('click', function(){
 
 
 /////////////////////////
-// delivery button 
+// delivery button :->
 const deliveryFree = document.getElementById('delivery-free');
 const deliveryPaid = document.getElementById('delivery-paid');
 
@@ -89,25 +86,25 @@ function delivery(x){
         deliveryCost.innerText= 20;
     }
 };
-//
+//  Click event for Delivery button --
 deliveryFree.addEventListener('click',function(){
     delivery('free');
     totalCost();
 });
-//
+
 deliveryPaid.addEventListener('click',function(){
     delivery('paid');
     totalCost();
 });
 
 
-/////////////////////
-// coupon  section 
+///////////////////////
+// coupon  section :->
 const inputCoupon = document.getElementById('input-coupon');
 const applyBtn = document.getElementById('apply-btn');
 
+// Click event for coupon apply button --
 applyBtn.addEventListener('click' ,function(e){
-    e.preventDefault;
     const mainTotal =document.getElementById('main-total');
     const discount = document.getElementById('discount');
     
