@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>bank</title>
+</head>
+<body>
+    <header>
+        <h1>Your account info :</h1>
+    </header>
+    <section class="w-9/12 mx-auto my-3">
+       <div class="grid grid-flow-col grid-cols-3">
+           <div class="">
+             <h3>Deposit</h3>
+             <h4>$<span id="depo-main">00</span></h4>
+           </div>
+           <div class="">
+             <h3>Withdrew</h3>
+             <h4>$<span id="with-main">00</span></h4>
+           </div>
+           <div class="">
+             <h3>Balance</h3>
+             <h4>$<span id="balance-main">2000</span></h4>
+           </div>
+       </div>
+    </section>
+    <section class="w-9/12 mx-auto my-3">
+        <div class="grid grid-flow-col grid-cols-2">
+            <div>
+                 <h3> Inter your diposite</h3>
+                 <input class="border-2 rounded-md border-pink-600 w-2/4 p-3" type="text" id="deposit-input" placeholder="inter your deposite in dollerr"><br>
+                 <button id="deposit-btn" class="border-3 rounded-md border-pink-600 p-4  ">submit</button>
+            </div>
+            <div>
+                 <h3> Inter your diposite</h3>
+                 <input class="border-2 rounded-md border-pink-600 w-2/4 p-3" type="text" id="withdraw-input" placeholder="inter your deposite in dollerr"><br>
+                 <button id="withdrew-btn" class="border-3 rounded-md border-pink-600 p-4  ">submit</button>
+            </div>
+            
+        </div>
+    </section>
+    <script src="bank.js"></script>
+</body>
+</html>
