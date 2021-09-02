@@ -30,7 +30,7 @@ const bookCards = (coverPic,bookTitle,authorName,id, publishName, numbers) =>{
 
 // API calling funtion 
 const bookApi =(bookName) =>{
-    fetch(`http://openlibrary.org/search.json?q=${bookName}`)
+    fetch(`https://openlibrary.org/search.json?q=${bookName}`)
     .then(res => res.json())
     .then(datas => {
         const {docs} = datas;  // Destructuring data object 
