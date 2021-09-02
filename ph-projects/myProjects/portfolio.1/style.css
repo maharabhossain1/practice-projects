@@ -1,0 +1,13 @@
+body{
+    background-color: #dad0c0;
+}
+img{
+    max-width: 60%;
+    height: auto;
+}
+
+nav{
+    border: 1px solid black;
+    display: flex;
+    height: 60px;
+}
