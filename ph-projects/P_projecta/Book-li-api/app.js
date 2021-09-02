@@ -22,7 +22,7 @@ const bookCards = (coverPic,bookTitle,authorName,id, publishName, numbers) =>{
         <p class="card-title">First publish year : ${id}</p>
         <p class="card-text "> Publishers : ${publishName}</p>
     </div>`;
-    div1.appendChild(div);
+    div1.appendChild(div); 
     card.appendChild(div1);
     searchResult.innerText =`Search result :${numbers}` ;
 };
@@ -33,13 +33,12 @@ const bookApi =(bookName) =>{
     fetch(`http://openlibrary.org/search.json?q=${bookName}`)
     .then(res => res.json())
     .then(datas => {
-        const {docs} = datas;
-        console.log(docs);
-        if (docs.length !== 0){
+        const {docs} = datas;  // Destructuring data object 
+        if (docs.length !== 0){   //for error handling
             docs.forEach( element => {
-                const {cover_i,title,author_name,first_publish_year,publisher} = element;
+                const {cover_i,title,author_name,first_publish_year,publisher} = element; // Destructuring element object 
                 if ((author_name && cover_i && publisher) !== undefined){
-                    books(cover_i,title,author_name,first_publish_year,publisher, docs.length);
+                    bookCards(cover_i,title,author_name,first_publish_year,publisher, docs.length); //calling bookCards function and putting destructured variables into parameter 
                 };
             });   
         }else{
@@ -47,13 +46,6 @@ const bookApi =(bookName) =>{
         }  
     })
 };
-
-
-// read property and input it in dymnamic html function 
-const books = (coverPic,bookTitle,authorName,id, publishName, numbers) => {
-    authorName.forEach(writter => bookCards(coverPic,bookTitle,writter,id, publishName, numbers))
-};
-
 
 // Search  butter Click Event 
 searchBtn.addEventListener('click',function(){
