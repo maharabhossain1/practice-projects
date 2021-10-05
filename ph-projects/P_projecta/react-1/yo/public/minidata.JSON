@@ -1,0 +1,26 @@
+[
+  {
+    "id": 4,
+    "title": "Quran with Tajweed",
+    "img": "https://alquranrecite.com/wp-content/uploads/2019/10/Quran-recitation.svg",
+    "fee": 5000
+  },
+  {
+    "id": 5,
+    "title": "Quran Memorization",
+    "img": "https://i.pinimg.com/736x/2e/36/0e/2e360ed9a145f26ded49f227d2aeaecc.jpg",
+    "fee": 5000
+  },
+  {
+    "id": 6,
+    "title": "Quran Translation",
+    "img": "https://alquranrecite.com/wp-content/uploads/2019/10/Learn-online-quran.svg",
+    "fee": 5000
+  },
+  {
+    "id": 7,
+    "title": "Daily Islam",
+    "img": "https://ariosan.or.id/wp-content/uploads/2021/05/ariosan.jpg",
+    "fee": 5000
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "title": "Life Time Support",
+    "text": "From Our course if you buy this service .we will give you life time support.",
+    "img": "https://alquranrecite.com/wp-content/uploads/2019/10/Quran-reading.svg",
+    "fee": 2000
+  },
+  {
+    "id": 2,
+    "title": "Online Courses",
+    "text": "If you buy this service . we will be take care of you in online .",
+    "img": "https://alquranrecite.com/wp-content/uploads/2019/10/quran-academy.svg",
+    "fee": 2000
+  },
+  {
+    "id": 3,
+    "title": "Expart Teacher",
+    "text": "For our teachers you must have to pay some fee . Other wise you naver have Expart teachers experience ",
+    "img": "https://alquranrecite.com/wp-content/uploads/2019/10/Quran-teaching.svg",
+    "fee": 3000
+  },
+  {
+    "id": 4,
+    "title": "Quran with Tajweed",
+    "text": "IF you buy this service . We will take care of your Quran tajweed chapter . IN sha Allah ",
+    "img": "https://alquranrecite.com/wp-content/uploads/2019/10/Quran-recitation.svg",
+    "fee": 5000
+  },
+  {
+    "id": 5,
+    "title": "Quran Memorization",
+    "text": "IF you buy this service . We will take care of your Quran Memorization  chapter . IN sha Allah ",
+    "img": "https://i.pinimg.com/736x/2e/36/0e/2e360ed9a145f26ded49f227d2aeaecc.jpg",
+    "fee": 5000
+  },
+  {
+    "id": 6,
+    "title": "Quran Translation",
+    "text": "IF you buy this service . We will take care of your Quran Translation chapter . IN sha Allah ",
+    "img": "https://alquranrecite.com/wp-content/uploads/2019/10/Learn-online-quran.svg",
+    "fee": 5000
+  },
+  {
+    "id": 7,
+    "title": "Daily Islam",
+    "text": "IF you buy this service . We will take care of you Daily Islam chapter . IN sha Allah ",
+    "img": "https://ariosan.or.id/wp-content/uploads/2021/05/ariosan.jpg",
+    "fee": 5000
+  }
+]
